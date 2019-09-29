@@ -1,0 +1,604 @@
+.wrap {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: hsl(360, 70%, 45%);
+}
+
+
+
+.circle {
+	/* z-index: -1; */
+}
+
+
+.page {
+	width: 100%;
+	height: 10%;
+	font-size: 50px;
+	line-height: 400px;
+	text-align: center;
+	font-weight: 700px;
+	background-image: linear-gradient(to bottom, #F81919, #630404);
+}
+
+#page1 {
+	position: relative;
+}
+
+#page1 .block11 {
+	height: 90px;
+	width: 280px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: 80px;
+}
+
+.block11 {
+	top: 30px !important;
+}
+
+
+
+
+
+
+#flag_bg {
+	position: absolute;
+	width: 100%;
+	top: -30px;
+	right: -50px;
+	z-index: 1;
+}
+
+#silk {
+	position: absolute;
+	width: 200%;
+	top: 20%;
+	right: -50px;
+	z-index: 0;
+}
+
+#gif1 {
+	position: absolute;
+	top: 0px;
+	height: 1000%;
+}
+
+#gif2 {
+	position: absolute;
+	top: 0px;
+	left: -30px;
+	height: 1000%;
+}
+
+
+
+/* @-ms-keyframes arrow {
+	0% {}
+
+	100% {
+		bottom: -40px;
+	}
+} */
+.music {
+	/* animation: arrow 1s linear infinite normal; */
+	position: absolute;
+	top: 2%;
+	left: -1%;
+	/* top: 20px;
+	left: 300px; */
+	animation: music 3s linear infinite normal;
+}
+
+@keyframes music {
+	0% {}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#page1-5 {
+	position: relative;
+}
+
+
+
+
+
+#page2 {
+	position: relative;
+
+}
+
+
+#page2-5 {
+	position: relative;
+}
+
+
+#page2-5 .block2-5-2 {
+	height: 30px;
+	width: 160px;
+	text-align: center;
+	position: absolute;
+	left: 38%;
+	top: 61%;
+	color: white;
+	background-color: black;
+	opacity: 0.9;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#page3-1,
+#page3-2,
+#page3-3,
+#page3-4 {
+	position: relative;
+}
+
+#page3-1 p,
+#page3-2 p,
+#page3-3 p {
+	width: 210px;
+	margin: auto;
+	line-height: 28px;
+	position: relative;
+	top: -45px;
+}
+
+#page3-4 p {
+	width: 210px;
+	margin: auto;
+	line-height: 24px;
+	position: relative;
+	font-size: 15px;
+	top: -45px;
+}
+
+#page4,
+#page5,
+#page6,
+#page7,
+#page8,
+#page9,
+#page10,
+#page11,
+#page12,
+#page13,
+#page14,
+#page15,
+#page16,
+#page17 {
+	position: relative;
+}
+
+#page4 .block41,
+#page5 .block51,
+#page6 .block61,
+#page7 .block71,
+#page8 .block81,
+#page9 .block91,
+#page10 .block101,
+#page11 .block111,
+#page12 .block121,
+#page13 .block131,
+#page14 .block141,
+#page15 .block151,
+#page16 .block161,
+#page17 .block171 {
+	height: 0px;
+	width: 0px;
+	/* height: 120px;
+	width: 240px; */
+	margin: auto;
+	color: black;
+	text-align: center;
+	line-height: 170px;
+	position: relative;
+	top: 0px;
+}
+
+#page4 .block42,
+#page5 .block52,
+#page6 .block62,
+#page7 .block72,
+#page8 .block82,
+#page9 .block92,
+#page10 .block102,
+#page11 .block112,
+#page12 .block122,
+#page13 .block132,
+#page14 .block142,
+#page16 .block162,
+#page17 .block172 {
+	height: 330px;
+	width: 190px;
+	margin: auto;
+	color: black;
+	line-height: 27px;
+	font-size: 15px;
+	position: relative;
+	top: -80px;
+	opacity: 0.9;
+}
+
+#page15 .block152 {
+	height: 330px;
+	width: 190px;
+	margin: auto;
+	color: black;
+	line-height: 24px;
+	font-size: 14.6px;
+	position: relative;
+	top: -70px;
+	opacity: 0.9;
+}
+
+#page12 .block122{
+	line-height: 24px;
+	font-size: 14.5px;
+}
+
+#page18,
+#page19,
+#page20,
+#page21 {
+	position: relative;
+}
+
+#page100 {
+	position: relative;
+}
+
+#pageEnd {
+	position: relative;
+}
+
+#pageEnd .blockEnd1 {
+	height: 35px;
+	width: 340px;
+	margin: auto;
+	text-align: center;
+	line-height: 120px;
+	position: relative;
+	top: 35%;
+	border-radius: 7px;
+	color: black;
+	font-size: 28px;
+}
+
+#pageEnd .blockEnd2 {
+	height: 20px;
+	width: 340px;
+	margin: auto;
+	text-align: center;
+	line-height: 120px;
+	position: relative;
+	top: 24%;
+	left: 24%;
+	border-radius: 7px;
+	color: black;
+	font-size: 15px;
+}
+
+#pageEnd .blockEnd3 {
+	height: 100px;
+	width: 20px;
+	margin: auto;
+	text-align: center;
+	line-height: 120px;
+	position: relative;
+	top: 41%;
+	left: -37%;
+	border-radius: 7px;
+	color: black;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#pageEnd .blockEnd4 {
+	height: 35px;
+	width: 340px;
+	margin: auto;
+	text-align: center;
+	line-height: 120px;
+	position: relative;
+	top: 4%;
+	left: -24%;
+	border-radius: 7px;
+	color: black;
+	font-size: 36px;
+}
+
+#pageEnd .blockEnd5 {
+	height: 100px;
+	width: 25px;
+	margin: auto;
+	text-align: center;
+	line-height: 120px;
+	position: relative;
+	top: 23%;
+	left: -29%;
+	border-radius: 7px;
+	color: black;
+	font-size: 22px;
+	line-height: 24px;
+}
+
+#pageEnd .blockEnd6 {
+	height: 35px;
+	width: 340px;
+	margin: auto;
+	text-align: center;
+	line-height: 120px;
+	position: relative;
+	top: -22%;
+	left: 6%;
+	border-radius: 7px;
+	color: black;
+	font-size: 25px;
+}
+
+audio {
+	display: none;
+}
+
+#TAM {
+	position: absolute;
+	bottom: -25px;
+	left: calc(50% - 150px);
+	width: 300px;
+	z-index: 99;
+}
+
+#logo {
+	width: 45vh;
+	animation: fadeIn 3s;
+	position: absolute;
+	z-index: 999;
+	top: 30%;
+	left: calc(50% - 22.5vh);
+}
+
+#tiltle {
+	color: rgb(255, 214, 141) !important;
+	font-size: 0.8em;
+}
+
+.block11 p {
+	/* 删除前面的这个CSS参数 */
+	margin-top: -180px;
+	z-index: 1;
+	font-size: 3.5vh;
+	font-weight: 550;
+	animation: bounce 2s 3s;
+	animation-fill-mode: backwards !important;
+}
+
+#page1 .block13 {
+	/* 删除前面的这个CSS参数 */
+	margin-top: 30%;
+	height: 230px;
+	width: 220px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	line-height: 50px;
+	color: white;
+
+}
+
+#expalin p {
+	/* 我知道这是个错误单词，但这不重要 */
+	font-size: 0.75em;
+	border-bottom: 3px solid rgb(255, 214, 141);
+}
+
+#bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 990;
+}
+
+.arrow {
+	/* 删除前面的这个CSS参数 */
+	animation: arrow 1s both infinite ease;
+	position: absolute;
+	bottom: 10px;
+	width: 20px;
+	left: calc(50% - 10px);
+	color: red;
+	opacity: 0.5;
+	z-index: 999;
+}
+
+@keyframes arrow {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+}
+
+#yh {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	bottom: -40px;
+	left: 0px;
+}
+
+/* page2 */
+#page1-5 .block1-5-2 {
+	/* 删除前面的这个CSS参数 */
+	height: 90%;
+	width: 80%;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	line-height: 23px;
+	color: white;
+	top: 0px;
+	background-color: rgb(210, 23, 11);
+	font-size: 16px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap2 {
+	/* 删除前面的这个CSS参数 */
+	width: 100%;
+	height: 1000%;
+	transition: .3s linear;
+	background-color: rgb(139, 0, 0);
+}
+
+#page1-5 .block1-5-1 {
+	/* 删除前面的这个CSS参数 */
+	padding-top: 50px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid white;
+	margin: auto;
+	color: rgb(255, 230, 150);
+	top: 50px;
+
+}
+
+/*page3*/
+.content_bg {
+	z-index: 1;
+	height: 90%;
+	width: 80%;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	line-height: 23px;
+	color: white;
+	top: 0px;
+	background-color: rgb(210, 23, 11);
+	font-size: 16px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#page2 .block20 {
+	/* 删除前面的这个CSS参数 */
+	height: 90px;
+	width: 330px;
+	margin: auto;
+	text-align: center;
+	line-height: 90px;
+	position: absolute;
+	top: 30px;
+
+}
+
+.list {
+	border: rgb(255, 230, 150) solid 1.5px;
+	margin-top: 60px;
+	font-size: 0.8rem;
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+#muenu {
+	background-color: rgb(143, 9, 0);
+	color: rgb(255, 230, 150);
+	position: absolute;
+	margin-top: 110px;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: calc(50% - 60px);
+	font-size: 1.2em;
+}
+
+#backStar {
+	position: absolute;
+	width: 100%;
+	margin-left: -50%;
+	margin-top: -100%;
+	opacity: .7;
+}
+
+/* page4 */
+#page2-5 .block2-5-1,
+#page2-5 .block2-5-1 img {
+	/* 删除前面的这个CSS参数 */
+	height: 180px;
+	width: 180px;
+	position: absolute;
+	top: 30%;
+	left: 18%;
+	border-radius: 100%;
+	color: white;
+	font-size: 25px;
+}
+
+/* page5 */
+.contentImage {
+	width: 40vh;
+	height: 25vh;
+	overflow: hidden;
+	margin-left: calc(50% - 20vh);
+	margin-top: 10vh;
+}
+
+.contentImage img {
+	width: 100%;
+}
+
+.content_bg p {
+	font-size: 1em;
+	padding: 10px;
+	font-weight: 100;
+}
+
+/* pageN */
+.contentImage2 {
+	width: 40vh;
+	height: 25vh;
+	overflow: hidden;
+	margin-left: calc(50% - 20vh);
+	margin-top: 0;
+}
+
+.contentImage2 img {
+	width: 100%;
+}
+
+.make {
+	line-height: 25px;
+	font-size: 15px;
+	position: absolute;
+	top: 68%;
+	left: 62%;
+	letter-spacing: 1px;
+}
+
+
+
+#page1 .block11 #tiltle{
+	position: relative;
+	top: -30px;
+}
+
+#page1 .block13 p{
+	position: relative;
+	top: -30px;
+}

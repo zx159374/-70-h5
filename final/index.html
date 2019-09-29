@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta content="yes" name="mobile-web-app-capable">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/animation.css" />
+		<link rel="stylesheet" type="text/css" href="css/self-animation.css" />
+		<link rel="stylesheet" type="text/css" href="css/pics.css" />
+		<title>移动端整页滑屏示例</title>
+	</head>
+	<body>
+		<div class="wrap" id="wrap">
+			<audio id="bgmusic" autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="bgmusic.mp3"></audio>
+			<div class="wrap2" id="wrap2">
+				<div id="page1" class="page">
+					<div class="bgcimage" style="background-image: url('copy/flag.webp');">
+						<div class="circle1 circle"></div>
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleA circle"></div>
+					</div>
+
+					<div class="block11">
+						<img src="copy/flag.webp" alt="bg" id="flag_bg">
+						<img src="" alt="">
+						<img src="copy/logoCenter.webp" alt="logo" id="logo">
+						<img src="copy/silk.webp" alt="" id="silk">
+						<img src="copy/flyStar.gif" id="gif1" alt="">
+						<img src="copy/flyStar.gif" id="gif2" alt="">
+						<p id="tiltle">盛世华诞 · 锦绣中国</p>
+					</div>
+					<div class="block13" id="expalin">
+						<br><br><br><br><br><br><br><br>
+						<p> 峥嵘70载，伴你一路花开</p>
+					</div>
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<img src="copy/tianAnMen.webp" id="TAM" alt="">
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music1" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page1-5" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleB circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<div class="block1-5-2" class="text_content" style="z-index: 1">
+						<div id="block1-5-1" class="block1-5-1">
+							昔人挽神州，今我撼寰球！
+						</div>
+						<br>
+						<p id="block1-5-2" style="padding-left: 10px;
+											 padding-right: 10px; font-size: 16px;width: 240px;margin: auto;line-height: 23px;">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70载风云激荡，70载砥砺前行。70年峥嵘岁月中，中华儿女带走了旧中国的积贫积弱，迎来了新中国的国富民强。“看似寻常最奇绝，成如容易却艰辛”，每一个传奇都是来之不易的。70年前，我们的先辈筚路蓝缕，将初生的新中国引领上了正确的道路，锐意发展，不断进步，终于造就了今天的世界第二大经济体；长歌未央，今天的我们更当心怀爱国情，为祖国喝彩。
+							我们，愿许这位古稀老人永世精彩，伴他一路花开。
+							现在，请一起走近这70年的风云变幻······</p>
+					</div>
+					<img src="copy/yh.webp" alt="" id="yh">
+					<img src="copy/tianAnMen.webp" id="TAM" alt="">
+					<img class="arrow" src="img/doubleUp.png">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music2" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page2" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<div class="circle3 circle"></div>
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<div class="circle6 circle"></div>
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleC circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<img src="copy/tianAnMen.webp" id="TAM" alt="">
+					<div class="content_bg">
+						<div id="b20" class="block20">共产党70周年的故事</div>
+						<div id="muenu">目录引导</div>
+						<div id="b21" class="list" style="margin-top: 180px;">九天揽月，五洋擒蛟</div>
+						<div id="b22" class="list">一曲未央，千古吟唱</div>
+						<div id="b23" class="list">江山如此多娇</div>
+						<div id="b24" class="list">仓廪丰实，今非昔比</div>
+						<img src="copy/backStar.webp" id="backStar" alt="">
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music3" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page2-5" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<div class="circle7 circle"></div>
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleD circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<img src="copy/tianAnMen.webp" id="TAM" alt="">
+					<div id="block2_5_1" class="block2-5-1" onclick="jump()">
+						<img src="img/9.png" >
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music4" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page3-1" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleB circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class=" content_bg">
+						<div class="contentImage">
+							<img src="img/1.jpg" alt="">
+						</div>
+						<br><br>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70年来，许多成就的不断取得，许多技术的不断突破，使我国从白手起家到世界瞩目，从处处受制于人到领先全球。中国再不是让列强凌辱的弱国，而是在世界舞台上占重要地位的东方大国。请穿越时空，去看看那些被历史永久记录的“中国瞬间”
+						</p>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music5" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+
+				<div id="page5" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<div class="circle7 circle"></div>
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleD circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage">
+							<img id="block51" class="block51" src="img/1971.jpg">
+						</div>
+						<br><br>
+						<div id="block52" class="block52">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							1971 年 10 月 25 日，在联合国大会第 26
+							届会议上，中华人民共和国在联合国的席位得到恢复。确认中华人民共和国的代表是中国在联合国的唯
+							一合法代表，中华人民共和国是安全理事会五个常任理事国之一.
+						</div>
+					</div>
+					<!-- <div class="switchTo1" onclick="funcTo1()">
+						跳转页面1
+					</div> -->
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music9" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page9" class="page">
+					<div class="bgcimage">
+						<div class="circle1 circle"></div>
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleA circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage ">
+							<img id="block91" class="block91" src="img/economy.jpg">
+						</div>
+						<br><br>
+						<div id="block92" class="block92">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							2001年11月10日,在世界贸易组织部长级会议上
+							，通过了中国加入世贸组织的法律文件，它标志着经过 15
+							年的艰苦努力，中国终于成为世贸组织新成员;也标志着中国在经过了 15
+							年的歧视待遇之后，终于享有了与其他世贸成员同等待遇的权利。
+						</div>
+					</div>
+					<!-- <div class="switchTo1" onclick="funcTo1()">
+						跳转页面1
+					</div> -->
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music10" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page10" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<div class="circle7 circle"></div>
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleD circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage ">
+							<img id="block101" class="block101" src="img/sport.jpg">
+						</div>
+						<br><br>
+						<div id="block102" class="block102">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							2008 年北京奥运会 2008 年北京奥运会展示了中国作为世界大国的经济和科技实力。 改革开放 30
+							年风雨历程，中国在世界人民的印象中更多的是一个蓬勃的新兴经济体。
+							北京奥运会则把"文化中国”传递给了世界，“绿色”“科技”“人文” 的理念，深深地融进了传统奥运理念之中。
+						</div>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music11" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+
+				<div id="page12" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleB circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage ">
+							<img id="block121" class="block121" src="img/satellite.jpg">
+						</div>
+						<br><br>
+						<div id="block122" class="block122">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							中国北斗卫星导航系统是中国自行研制的全球卫星导航系统。 2017 年 11 月 5 日，
+							中国第三代导航卫星顺利升空，它标志着中国正式开始建造”北斗”全球卫星导航系统。
+							2018 年，我国陆续发射了多颗”北斗”全球组网卫星。2018 年 12 月 27 日，北斗系
+							统服务范围正式由区域扩展为全球，北斗系统正式迈入全球时代。
+						</div>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music12" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page3-2" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<div class="circle3 circle"></div>
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<div class="circle6 circle"></div>
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleC circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage">
+							<img src="img/2.jpg" alt="">
+						</div>
+						<br><br>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国作为唯一流传至今的文明古国，五千年的悠久历史始终让我们引以为豪，中国优秀的传统文化也一直为世界所称道。中国的文化是多样的，从文学艺术到古建文物，每一样都承载着泱泱中华史，代表着中国人与自然万物的精神沟通。请聆听历史的声音，他在为我们讲述一个关于自然和生活的故事：
+						</p>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music6" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page14" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<div class="circle7 circle"></div>
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleD circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage ">
+							<img id="block141" class="block141" src="img/interest.jpg">
+						</div>
+						<br><br>
+						<div id="block142" class="block142">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							截至2019年7月6日，中国世界文化遗产已达37
+							项，包括长城，甲骨文，苏州古典园林，颐和园等等。许多外国游客慕名而来，前
+							来参观我国的古建文物，感悟中国历史的巨大魅力。近些年来，越来越多的外国友人
+							千里迢迢来到中国甚至定居中国，只为全身心贴近他，这个让人永远陶醉其中的文化古国。
+						</div>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music13" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page15" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<div class="circle3 circle"></div>
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<div class="circle6 circle"></div>
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleC circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage ">
+							<img id="block151" class="block151" src="img/culture.jpg">
+						</div>
+						<br><br>
+						<div id="block152" class="block152">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							数代以来，一位位才子佳人在神州大地上泼墨挥毫，写下了“大江
+							东去，浪淘尽，千古风流人物”、“雄关漫道真如铁，而今迈步从头
+							越”等优美诗作。现在，中国文学与时代
+							发展同频共振，诞生了《平凡的世界》《活着》等优秀文学作品，更
+							有中国首位获得诺贝尔文学奖的莫言。中国文学在世界
+							各地影响巨大，孔子学院的多地开设让更多的外国友人了解中国文
+							化并深深为之着迷。
+						</div>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music14" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+
+				<div id="page3-3" class="page">
+					<div class="bgcimage">
+						<div class="circle1 circle"></div>
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleA circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage">
+							<img src="img/3.jpg" alt="">
+						</div>
+						<br><br>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中华大地幅员辽阔，960万平方米的土地，处处风景旖旎，美如画卷，文人墨客多有留笔。近几年，中国绝美的风景也吸引了不少外国摄影师，一起来看看他们镜头中如入画中的中国：
+						</p>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music7" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page18" class="page">
+					<div class="bgcimage">
+						<div class="circle1 circle"></div>
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleA circle"></div>
+					</div>
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="pic1">
+						<img id="pic1" src="img/oldcity.png">
+					</div>
+					<div id="text1" class="text1">
+						凤凰古城，
+						既有小桥流水的温柔，
+						也有时光沉淀的厚重。
+					</div>
+					<div class="pic2">
+						<img id="pic2" src="img/huangmount.png">
+					</div>
+					<div id="text2" class="text2">
+						云敛黄山际。
+						黄山的峭壁悬崖渐隐于云雾之中，
+						仙境般的景色令人神往。
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music15" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page19" class="page">
+					<div class="bgcimage">
+						<div class="circle1 circle"></div>
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleA circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="pic3">
+						<img id="pic3" src="img/shanghai.png">
+					</div>
+					<div id="text3" class="text3">
+						照片中的上海，被彩霞笼罩，
+						熟悉的城市因不同的色彩而更加动人。
+					</div>
+					<div class="pic4">
+						<img id="pic4" src="img/building.png">
+					</div>
+					<div id="text4" class="text4">
+						城隍阁巍然矗立于
+						万木之中，大气磅礴，
+						呈现出一种孤独的壮美
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music16" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page3-4" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<div class="circle3 circle"></div>
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<div class="circle6 circle"></div>
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleC circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="content_bg">
+						<div class="contentImage">
+							<img src="img/4.jpg" alt="">
+						</div>
+						<br><br>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建国初期，全国上下百
+							废待兴，农村地区大部分处于贫困之中，甚至无法解决基本的温饱
+							问题；城市地区也是千疮百孔。而经过70年来
+							的中国人民的不断奋斗，今天的中国已然脱胎换骨。如今，人民的
+							生活水平不断提高，移动支付和5G问世便利了我们的生活，联通
+							城市的高铁线路大大提高了交通运输效率，许多农村地区纷纷脱
+							贫，大力发展旅游业，一步步向富裕迈进。中国早已今非昔比，
+						</p>
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music8" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page20" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<div class="circle3 circle"></div>
+						<!-- <div class="circle4 circle"></div> -->
+						<!-- <div class="circle5 circle"></div> -->
+						<div class="circle6 circle"></div>
+						<!-- <div class="circle7 circle"></div> -->
+						<div class="circle8 circle"></div>
+						<div class="circleC circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="pic5">
+						<img id="pic5" src="img/old1.png">
+					</div>
+					<div id="text5" class="text5">解放初期人们吃饭</div>
+					<dic class="pic6">
+						<img id="pic6" src="img/new1.png">
+					</dic>
+					<div id="text6" class="text6">现代时期人们吃饭</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music17" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="page21" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<!-- <div class="circle7 circle"></div> -->
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleB circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<div class="pic7">
+						<img id="pic7" src="img/old2.png">
+					</div>
+					<div id="text7" class="text7">解放初期人民住宅</div>
+					<dic class="pic8">
+						<img id="pic8" src="img/new2.png">
+					</dic>
+					<div id="text8" class="text8">现代时期人民住宅</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music18" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+				<div id="pageEnd" class="page">
+					<div class="bgcimage">
+						<!-- <div class="circle1 circle"></div> -->
+						<!-- <div class="circle2 circle"></div> -->
+						<!-- <div class="circle3 circle"></div> -->
+						<div class="circle4 circle"></div>
+						<div class="circle5 circle"></div>
+						<!-- <div class="circle6 circle"></div> -->
+						<div class="circle7 circle"></div>
+						<!-- <div class="circle8 circle"></div> -->
+						<div class="circleD circle"></div>
+					</div>
+					<img src="copy/flag.webp" alt="bg" id="flag_bg">
+					<img src="copy/flyStar.gif" id="gif1" alt="">
+					<img src="copy/flyStar.gif" id="gif2" alt="">
+					<img src="copy/flagBottom.webp" id="bottom" alt="">
+					<img src="copy/yh.webp" alt="" id="yh">
+					<img src="copy/tianAnMen.webp" id="TAM" alt="">
+					<div id="blockEnd1" class="blockEnd1">
+						中国这本书，未完待续...
+					</div>
+					<div id="blockEnd2" class="blockEnd2">
+						全国各族人民大团结万岁
+					</div>
+					<div id="blockEnd3" class="blockEnd3">
+						努力创造属于新时代的光辉
+					</div>
+					<div id="blockEnd4" class="blockEnd4">
+						欢庆70周年
+					</div>
+					<div id="blockEnd5" class="blockEnd5">
+						恒爱中国,安享盛世
+					</div>
+					<div id="blockEnd6" class="blockEnd6">
+						神州同庆国庆，华夏共享中华
+					</div>
+					<div id="make" class="make">
+						文案编写:王智钰<br>
+						框架构造:朱翰霖<br>
+						设计美化:蔡京珂
+					</div>
+					<img class="arrow" src="img/doubleUp.png">
+					<img id="music19" class="music" src="img/musicA.png" onclick="stopping()">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//重要！禁止移动端滑动的默认事件
+			var a = 0;
+			var b = 0;
+			var c = 1;
+			var music1 = document.getElementById("music1");
+			var music2 = document.getElementById("music2");
+			var music3 = document.getElementById("music3");
+			var music4 = document.getElementById("music4");
+			var music5 = document.getElementById("music5");
+			var music6 = document.getElementById("music6");
+			var music7 = document.getElementById("music7");
+			var music8 = document.getElementById("music8");
+			var music9 = document.getElementById("music9");
+			var music10 = document.getElementById("music10");
+			var music11 = document.getElementById("music11");
+			var music12 = document.getElementById("music12");
+			var music13 = document.getElementById("music13");
+			var music14 = document.getElementById("music14");
+			var music15 = document.getElementById("music15");
+			var music16 = document.getElementById("music16");
+			var music17 = document.getElementById("music17");
+			var music18 = document.getElementById("music18");
+			var music19 = document.getElementById("music19");
+
+			music1.style.animationPlayState = "paused";
+			music2.style.animationPlayState = "paused";
+			music3.style.animationPlayState = "paused";
+			music4.style.animationPlayState = "paused";
+			music5.style.animationPlayState = "paused";
+			music6.style.animationPlayState = "paused";
+			music7.style.animationPlayState = "paused";
+			music8.style.animationPlayState = "paused";
+			music9.style.animationPlayState = "paused";
+			music10.style.animationPlayState = "paused";
+			music11.style.animationPlayState = "paused";
+			music12.style.animationPlayState = "paused";
+			music13.style.animationPlayState = "paused";
+			music14.style.animationPlayState = "paused";
+			music15.style.animationPlayState = "paused";
+			music16.style.animationPlayState = "paused";
+			music17.style.animationPlayState = "paused";
+			music18.style.animationPlayState = "paused";
+			music19.style.animationPlayState = "paused";
+			bgmusic.pause();
+
+			document.body.addEventListener('touchmove', function(event) {
+				event = event ? event : window.event;
+				if (event.preventDefault) {
+					event.preventDefault()
+				} else {
+					event.returnValue = false
+				}
+			}, false)
+			var pages = function(obj) {
+				var box = document.getElementById(obj.wrap);
+				var box2 = document.getElementById(obj.wrap2);
+				var len = obj.len;
+				var n = obj.n;
+				var startY, moveY, cliH;
+				//获取屏幕高度
+				var getH = function() {
+					cliH = document.body.clientHeight
+				};
+				getH();
+				window.addEventListener('resize', getH, false);
+				//touchStart
+				var touchstart = function(event) {
+					if (!event.touches.length) {
+						return;
+					}
+					startY = event.touches[0].pageY;
+					moveY = 0;
+				};
+				//touchMove
+				var touchmove = function(event) {
+					if (!event.touches.length) {
+						return;
+					}
+					moveY = event.touches[0].pageY - startY;
+					box2.style.transform = 'translateY(' + (-n * cliH + moveY) + 'px)'; //根据手指的位置移动页面
+				};
+				//touchEnd
+				var touchend = function(event) {
+					var b20 = document.getElementById("b20");
+					var b21 = document.getElementById("b21");
+					var b22 = document.getElementById("b22");
+					var b23 = document.getElementById("b23");
+					var b24 = document.getElementById("b24");
+					var block1_5_1 = document.getElementById("block1-5-1");
+					var block1_5_2 = document.getElementById("block1-5-2");
+					var block2_5_1 = document.getElementById("block2-5-1");
+					var block51 = document.getElementById("block51");
+					var block52 = document.getElementById("block52");
+					var block91 = document.getElementById("block91");
+					var block92 = document.getElementById("block92");
+					var block101 = document.getElementById("block101");
+					var block102 = document.getElementById("block102");
+					var block121 = document.getElementById("block121");
+					var block122 = document.getElementById("block122");
+					var block141 = document.getElementById("block141");
+					var block142 = document.getElementById("block142");
+					var block151 = document.getElementById("block151");
+					var block152 = document.getElementById("block152");
+					var pic1 = document.getElementById("pic1");
+					var pic2 = document.getElementById("pic2");
+					var pic3 = document.getElementById("pic3");
+					var pic4 = document.getElementById("pic4");
+					var pic5 = document.getElementById("pic5");
+					var pic6 = document.getElementById("pic6");
+					var pic7 = document.getElementById("pic7");
+					var pic8 = document.getElementById("pic8");
+					var text1 = document.getElementById("text1");
+					var text2 = document.getElementById("text2");
+					var text3 = document.getElementById("text3");
+					var text4 = document.getElementById("text4");
+					var text5 = document.getElementById("text5");
+					var text6 = document.getElementById("text6");
+					var text7 = document.getElementById("text7");
+					var text8 = document.getElementById("text8");
+					var blockEnd1 = document.getElementById("blockEnd1");
+					var blockEnd2 = document.getElementById("blockEnd2");
+					var blockEnd3 = document.getElementById("blockEnd3");
+					var blockEnd4 = document.getElementById("blockEnd4");
+					var blockEnd5 = document.getElementById("blockEnd5");
+					var blockEnd6 = document.getElementById("blockEnd6");
+					var make = document.getElementById("make");
+					//位移小于+-50的不翻页
+					if (moveY < -50) n++;
+					if (moveY > 50) n--;
+					//最后&最前页控制
+					if (n < 0) n = 0;
+					if (n > len - 1) n = len - 1;
+					//重定位
+					box2.style.transform = 'translateY(' + (-n * 10) + '%)'; //根据百分比位置移动页面
+					// console.log(n);
+					a++;
+					if ((a == 1) && (b == 0)) {
+						music1.style.animationPlayState = "running";
+						music2.style.animationPlayState = "running";
+						music3.style.animationPlayState = "running";
+						music4.style.animationPlayState = "running";
+						music5.style.animationPlayState = "running";
+						music6.style.animationPlayState = "running";
+						music7.style.animationPlayState = "running";
+						music8.style.animationPlayState = "running";
+						music9.style.animationPlayState = "running";
+						music10.style.animationPlayState = "running";
+						music11.style.animationPlayState = "running";
+						music12.style.animationPlayState = "running";
+						music13.style.animationPlayState = "running";
+						music14.style.animationPlayState = "running";
+						music15.style.animationPlayState = "running";
+						music16.style.animationPlayState = "running";
+						music17.style.animationPlayState = "running";
+						music18.style.animationPlayState = "running";
+						music19.style.animationPlayState = "running";
+						bgmusic.play();
+						b++;
+					}
+					console.log(n);
+					if (n == 1) {
+						block1_5_1.style.animation = "bounceInDown 2s linear 0.5s 1 forwards";
+						block1_5_2.style.animation = "bounceInUp 2s linear 0.5s 1 forwards";
+					}
+					if (n == 2) {
+						b20.style.animation = "bounceInDown 5s linear 0.05s 1 forwards";
+						b21.style.animation = "bounceInLeft 5s linear 0.1s 1 forwards";
+						b22.style.animation = "bounceInRight 5s linear 0.15s 1 forwards";
+						b23.style.animation = "bounceInLeft 5s linear 0.2s 1 forwards";
+						b24.style.animation = "bounceInRight 5s linear 0.25s 1 forwards";
+					}
+					if (n == 5) {
+						block51.style.animation = "bigger 1.5s linear 0s 1 forwards";
+						block52.style.animation = "bounceInUp 3s linear 0s 1 forwards";
+					}
+					if (n == 6) {
+						block91.style.animation = "bigger 1.5s linear 0s 1 forwards";
+						block92.style.animation = "bounceInUp 3s linear 0s 1 forwards";
+					}
+					if (n == 7) {
+						block101.style.animation = "bigger 1.5s linear 0s 1 forwards";
+						block102.style.animation = "bounceInUp 3s linear 0s 1 forwards";
+					}
+					if (n == 8) {
+						block121.style.animation = "bigger 1.5s linear 0s 1 forwards";
+						block122.style.animation = "bounceInUp 3s linear 0s 1 forwards";
+					}
+					if (n == 10) {
+						block141.style.animation = "bigger 1.5s linear 0s 1 forwards";
+						block142.style.animation = "bounceInUp 3s linear 0s 1 forwards";
+					}
+					if (n == 11) {
+						block151.style.animation = "bigger 1.5s linear 0s 1 forwards";
+						block152.style.animation = "bounceInUp 3s linear 0s 1 forwards";
+					}
+					if (n == 13) {
+						pic1.style.animation = "bounceInDown 2s linear 0s 1 forwards";
+						text1.style.animation = "bounceInUp 2s linear 0.5s 1 forwards";
+						pic2.style.animation = "bounceInUp 2s linear 0s 1 forwards";
+						text2.style.animation = "bounceInDown 2s linear 0.5s 1 forwards";
+					}
+					if (n == 14) {
+						pic3.style.animation = "bounceInUp 2s linear 0s 1 forwards";
+						text3.style.animation = "bounceInDown 2s linear 0.5s 1 forwards";
+						pic4.style.animation = "bounceInDown 2s linear 0s 1 forwards";
+						text4.style.animation = "bounceInUp 2s linear 0.5s 1 forwards";
+					}
+					if (n == 16) {
+						pic5.style.animation = "bounceInLeft 2s linear 0s 1 forwards";
+						pic6.style.animation = "bounceInRight 2s linear 0s 1 forwards";
+						text5.style.animation = "fadeIn 2s linear 0s 1 forwards";
+						text6.style.animation = "fadeIn 2s linear 0s 1 forwards";
+					}
+					if (n == 17) {
+						pic7.style.animation = "bounceInRight 2s linear 0s 1 forwards";
+						pic8.style.animation = "bounceInLeft 2s linear 0s 1 forwards";
+						text7.style.animation = "fadeIn 2s linear 0s 1 forwards";
+						text8.style.animation = "fadeIn 2s linear 0s 1 forwards";
+					}
+					if (n == 18) {
+						blockEnd1.style.animation = "bounceInLeft 2s linear 0s 1 forwards";
+						blockEnd2.style.animation = "bounceInRight 2s linear 0s 1 forwards";
+						blockEnd3.style.animation = "bounceInLeft 2s linear 0s 1 forwards";
+						blockEnd4.style.animation = "bounceInLeft 2s linear 0s 1 forwards";
+						blockEnd5.style.animation = "bounceInDown 2s linear 0s 1 forwards";
+						blockEnd6.style.animation = "bounceInUp 2s linear 0s 1 forwards";
+						make.style.animation = "fadeIn 4s linear 0s 1 forwards"
+					}
+				};
+				//touch事件绑定
+				box.addEventListener("touchstart", function(event) {
+					touchstart(event)
+				}, false);
+				box.addEventListener("touchmove", function(event) {
+					touchmove(event)
+				}, false);
+				box.addEventListener("touchend", function(event) {
+					touchend(event)
+				}, false);
+			};
+			pages({
+				wrap: 'wrap', //.wrap的id
+				wrap2: 'wrap2', //.wrap2的id
+				len: 19, //一共有几页
+				n: 0 //页面一打开默认在第几页？第一页就是0，第二页就是1
+			});
+			 
+			function jump(){
+				block2_5_1.style.animation="jumpUp 3s ease-in-out 0s 1 forwards";
+			}
+
+			function stopping() {
+				// var music.[0] = document.getElementsByClassName("music");
+				b++;
+				if ((c == 1) && (b <= 2)) {
+					music1.style.animationPlayState = "running";
+					music2.style.animationPlayState = "running";
+					music3.style.animationPlayState = "running";
+					music4.style.animationPlayState = "running";
+					music5.style.animationPlayState = "running";
+					music6.style.animationPlayState = "running";
+					music7.style.animationPlayState = "running";
+					music8.style.animationPlayState = "running";
+					music9.style.animationPlayState = "running";
+					music10.style.animationPlayState = "running";
+					music11.style.animationPlayState = "running";
+					music12.style.animationPlayState = "running";
+					music13.style.animationPlayState = "running";
+					music14.style.animationPlayState = "running";
+					music15.style.animationPlayState = "running";
+					music16.style.animationPlayState = "running";
+					music17.style.animationPlayState = "running";
+					music18.style.animationPlayState = "running";
+					music19.style.animationPlayState = "running";
+					bgmusic.play();
+				}
+				if ((c == 1) && (b >= 3)) {
+					music1.style.animationPlayState = "paused";
+					music2.style.animationPlayState = "paused";
+					music3.style.animationPlayState = "paused";
+					music4.style.animationPlayState = "paused";
+					music5.style.animationPlayState = "paused";
+					music6.style.animationPlayState = "paused";
+					music7.style.animationPlayState = "paused";
+					music8.style.animationPlayState = "paused";
+					music9.style.animationPlayState = "paused";
+					music10.style.animationPlayState = "paused";
+					music11.style.animationPlayState = "paused";
+					music12.style.animationPlayState = "paused";
+					music13.style.animationPlayState = "paused";
+					music14.style.animationPlayState = "paused";
+					music15.style.animationPlayState = "paused";
+					music16.style.animationPlayState = "paused";
+					music17.style.animationPlayState = "paused";
+					music18.style.animationPlayState = "paused";
+					music19.style.animationPlayState = "paused";
+					bgmusic.pause();
+					c = 0;
+				} else if ((c == 0) && (b >= 3)) {
+					music1.style.animationPlayState = "running";
+					music2.style.animationPlayState = "running";
+					music3.style.animationPlayState = "running";
+					music4.style.animationPlayState = "running";
+					music5.style.animationPlayState = "running";
+					music6.style.animationPlayState = "running";
+					music7.style.animationPlayState = "running";
+					music8.style.animationPlayState = "running";
+					music9.style.animationPlayState = "running";
+					music10.style.animationPlayState = "running";
+					music11.style.animationPlayState = "running";
+					music12.style.animationPlayState = "running";
+					music13.style.animationPlayState = "running";
+					music14.style.animationPlayState = "running";
+					music15.style.animationPlayState = "running";
+					music16.style.animationPlayState = "running";
+					music17.style.animationPlayState = "running";
+					music18.style.animationPlayState = "running";
+					music19.style.animationPlayState = "running";
+					c = 1;
+					bgmusic.play();
+				}
+			}
+		</script>
+	</body>
+
+</html>
+
+<!-- <div class="switchTo4" onclick="funcTo4()">
+						跳转页面4
+					</div>
+					<div class="switchTo5" onclick="funcTo5()">
+						跳转页面5
+					</div>
+					<div class="switchTo6" onclick="funcTo6()">
+						跳转页面6
+					</div>
+					<div class="switchTo7" onclick="funcTo7()">
+						跳转页面7
+					</div> -->
+<!-- 					animation-play-state: paused; -->
